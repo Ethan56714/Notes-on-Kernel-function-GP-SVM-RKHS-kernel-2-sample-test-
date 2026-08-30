@@ -196,7 +196,7 @@ This process is what we call the Kernel trick.
 But in fact, we do not need to know the underlying mechanism here. We only need to know that through the kernel trick, we can represent the relationship between x and y in a high-dimensional space, and this relationship allows us to compute their linear regression in the high-dimensional space.
 
 
-最后我们可以得到这样一个结论：
+Finally we can conclude that：
 
 ![图片](images/image_030.png)
 As for when to choose which kernel function in SVM, the situation is somewhat similar to GP. We still need to make a general judgment about the data; for example, data that is originally locally linear may require a linear kernel.
@@ -363,7 +363,7 @@ The proof is straightforward and only requires some basic knowledge of **linear 
 
 Finally, we use our favorite kernel trick:
 
-           ![图片](images/image_047.png)
+![图片](images/image_047.png)
 
 
 **Unbiased empirical estimate: (calculated from data)**
@@ -394,6 +394,19 @@ we define the witness function  to be the RKHS function attaining the supremum i
 ![图片](images/image_051.png)
 
 by kernel trick
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
