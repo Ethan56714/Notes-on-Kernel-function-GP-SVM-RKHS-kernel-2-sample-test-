@@ -1,0 +1,2 @@
+# Notes-on-Kernel-function-GP-SVM-RKHS-kernel-2-sample-test-
+These are self-study notes based on my second-year undergraduate mathematics studies at UCL, together with my independent study of machine learning following Stanford CS229. The notes focus on several common applications of kernel functions, including Gaussian processes, the kernel trick in SVMs, and the use of RKHS in Maximum Mean Discrepancy 
