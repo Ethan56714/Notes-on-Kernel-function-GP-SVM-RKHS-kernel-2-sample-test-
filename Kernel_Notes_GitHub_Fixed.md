@@ -121,17 +121,13 @@ $$
 The three terms represent data fit, a complexity penalty through the covariance determinant, and a normalisation term. Hyperparameters such as $\sigma$, $\ell$, and the noise level can be estimated by maximising this quantity.
 
 
-For a test input \(x_{*}\), define the kernel vector
+For a test input $x_*$, define the kernel vector
 
 $$
-\mathbf{k}_{*} =
-\begin{pmatrix}
-k(x_1,x_{*}) \\
-\vdots \\
-k(x_n,x_{*})
-\end{pmatrix},
+\mathbf{k}_* =
+\left(k(x_1,x_*),\ldots,k(x_n,x_*)\right)^{\mathsf T},
 \qquad
-k_{**}=k(x_{*},x_{*}).
+k_{**}=k(x_*,x_*).
 $$
 
 
@@ -139,7 +135,7 @@ $$
 The posterior predictive distribution is Gaussian:
 
 $$
-f_{*} \mid \mathbf{X},\mathbf{y},x_{*}
+f_* \mid \mathbf{X},\mathbf{y},x_*
 \sim \mathcal{N}(\mu_*,\sigma_*^2).
 $$
 
