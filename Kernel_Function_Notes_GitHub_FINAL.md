@@ -120,19 +120,29 @@ $$
 
 The three terms represent data fit, a complexity penalty through the covariance determinant, and a normalisation term. Hyperparameters such as $\sigma$, $\ell$, and the noise level can be estimated by maximising this quantity.
 
-For a test input $x_*$, define the kernel vector
+
+For a test input \(x_*\), define the kernel vector
 
 $$
-\mathbf{k}_* = (k(x_1,x_*), \ldots, k(x_n,x_*))^{\mathsf T},
+\mathbf{k}_* =
+\begin{pmatrix}
+k(x_1,x_*) \\
+\vdots \\
+k(x_n,x_*)
+\end{pmatrix},
 \qquad
 k_{**}=k(x_*,x_*).
 $$
 
+
+
 The posterior predictive distribution is Gaussian:
 
 $$
-f_* \mid X,\mathbf{y},x_* \sim \mathcal{N}(\mu_*,\sigma_*^2).
+f_* \mid \mathbf{X},\mathbf{y},x_*
+\sim \mathcal{N}(\mu_*,\sigma_*^2).
 $$
+
 
 The posterior mean is
 
@@ -475,3 +485,15 @@ The sign and magnitude of the witness function indicate where the two distributi
 
 - Gaussian-process kernels: [Peter Roelants, Gaussian Process Kernels](https://peterroelants.github.io/posts/gaussian-process-kernels/)
 - MMD: Arthur Gretton et al., *A Kernel Two-Sample Test* ([JMLR paper](https://jmlr.csail.mit.edu/papers/volume13/gretton12a/gretton12a.pdf))
+
+  
+## Formula test
+
+Inline formula: $x_i$
+
+Block formula:
+
+$$
+x_i = \mathcal{N}(\mu,\sigma^2)
+$$
+
