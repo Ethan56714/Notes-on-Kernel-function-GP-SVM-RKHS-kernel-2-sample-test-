@@ -2,6 +2,7 @@
 
 This folder contains a GitHub-compatible Markdown version of the notes.
 
+- kernel notes final version is concise version which is clear and no image
 - `Kernel_Function_Notes_English.md`: main Markdown file
 - `images/`: all embedded images extracted from the original Markdown
 
